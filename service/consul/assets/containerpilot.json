@@ -1,0 +1,13 @@
+{
+  "consul": "127.0.0.1:8500",
+  "preStart": ["consul-manage", "preStart"],
+  "services": [
+    {
+      "name": "consul",
+      "port": 8500,
+      "health": ["consul-manage", "health"],
+      "poll": 10,
+      "ttl": 25
+    }
+  ]
+}
