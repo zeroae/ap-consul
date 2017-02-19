@@ -16,8 +16,3 @@ services:
       - 127.0.0.1
     environment:
       - CONSUL=consul
-    command: >
-      containerpilot
-      consul agent -server
-        -bootstrap-expect 3
-        -config-dir=/etc/consul.d

@@ -1,0 +1,16 @@
+# Service definition for Consul cluster with a minimum of 3 nodes.
+# Nodes will use Triton CNS for the service (passed in via the CONSUL
+# env var) to find each other and bootstrap the cluster.
+
+consul:
+    image: zeroae/ap-consul:latest
+    labels:
+      - triton.cns.services=consul
+    restart: always
+    mem_limit: 128m
+    ports:
+      - 8500
+    dns:
+      - 127.0.0.1
+    env_file:
+      - .env
