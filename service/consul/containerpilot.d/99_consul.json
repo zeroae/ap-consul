@@ -9,5 +9,14 @@
       "poll": 10,
       "ttl": 25
     }
+  ],
+  "coprocesses": [
+    {
+      "name": "consul-server",
+      "command": [
+        "consul", "agent", "-server", "-config-dir=/etc/consul.d"
+      ],
+      "restarts": "unlimited"
+    }
   ]
 }
