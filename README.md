@@ -7,3 +7,6 @@
 [hub]: https://hub.docker.com/r/zeroae/ap-consul/
 
 Consul based on Joyent's autopilot pattern.
+
+# Configuration Environment Variables
+    - CONSUL_BOOTSTRAP_EXPECT: defaults to 3.

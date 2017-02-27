@@ -16,3 +16,4 @@ services:
       - 127.0.0.1
     environment:
       - CONSUL=consul
+      - CONSUL_BOOTSTRAP_EXPECT=1

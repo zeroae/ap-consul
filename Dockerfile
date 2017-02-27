@@ -1,10 +1,12 @@
 # Use zeroae/ap-light
 # https://github.com/zeroae/ap-light
-FROM zeroae/ap-light:0.2.0
+FROM zeroae/ap-light:0.4.0
 MAINTAINER Patrick Sodré <sodre@zeroae.co>
 
+ENV CONSUL_BOOTSTRAP_EXPECT=3
+
 ADD service /container/service
-RUN /container/tool/install-service
+RUN /container/tool/ap-service-install
 
 # Set /var/www/ in a data volume
 VOLUME /var/lib/run
