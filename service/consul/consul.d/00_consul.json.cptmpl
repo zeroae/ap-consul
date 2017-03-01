@@ -1,4 +1,6 @@
 {
+  {{ if .CONSUL_ACL_MASTER_TOKEN }}"acl_master_token" : "{{ .CONSUL_ACL_MASTER_TOKEN }}",
+  "acl_token": "{{ .CONSUL_ACL_MASTER_TOKEN }}",{{ end }}
   "client_addr": "0.0.0.0",
   "ui": true,
   "bootstrap_expect": {{ .CONSUL_BOOTSTRAP_EXPECT }}

@@ -17,3 +17,5 @@ services:
     environment:
       - CONSUL=consul
       - CONSUL_BOOTSTRAP_EXPECT=1
+      - CONSUL_ACL_DATACENTER=dc1
+      - CONSUL_ACL_MASTER_TOKEN=master-token-123
