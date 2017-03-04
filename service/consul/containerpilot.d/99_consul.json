@@ -14,7 +14,7 @@
     {
       "name": "consul-server",
       "command": [
-        "consul", "agent", "-server", "-config-dir=/etc/consul.d"
+        "consul", "agent", "-config-dir=/etc/consul.d"
       ],
       "restarts": "unlimited"
     }

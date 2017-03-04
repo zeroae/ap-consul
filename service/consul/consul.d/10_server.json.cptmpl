@@ -3,6 +3,7 @@
   "acl_token": "{{ .CONSUL_ACL_MASTER_TOKEN }}",{{ end }}
   "client_addr": "0.0.0.0",
   "ui": true,
+  "server": true,
   "bootstrap_expect": {{ .CONSUL_BOOTSTRAP_EXPECT }},
   "disable_remote_exec": true
 }
